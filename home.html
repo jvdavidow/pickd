@@ -2,27 +2,58 @@
 <html>
   <head>
     <title>pickd -- the social diabetes network</title>
+	<style>
+	img
+	{
+	position:absolute;
+	left:0px;
+	top:0px;
+	z-index:-1;
+	}
+	body
+	{
+	background:url("http://static.myopera.com/community/graphics/speeddials/Opera-	Background-Colored-Lights.jpg");
+    background-position:fixed;
+    background-size:100%;
+	}
+    h1
+    {
+    margin-left:200px;
+    font-family:helvetica;
+    font-size:24px;
+    color:white;
+    }
+    .box
+    {
+    background:white;
+    margin:30px;
+    position:relative;
+        
+    }
+	</style>
   </head>
   <body>
-	  <header>
-		<h1>"this is your SWEET SOCIAL COMMUNITY"</h1>
-		  <!-- i'm trying to do a customizable background image, like twitter !-->
-		  <body background="http://placekitten.com/200/300">
-		  <class id="nav">
-	  </header>
-	  <section id = "feed">
+	  <div id="header">
+		<img src="http://pickd.com/img/logo-174x216.png" width="100" height="200">
+		<h1>this is your SWEET SOCIAL COMMUNITY</h1>
+		<br/>
+		<h2>ickd</h2>
+    </div>
+		<div id="nav">
+	  </div>
+	  <section id = "feed" class="box">
 		  <h2>what's happenin'</h2>
-		  <div class = "post">
-			  <!-- i need some help with pixel size, if you have any rules of thumb!-->
-			  <img src="http://placekitten.com/200/300">
-		
-	   <section id="post">
+        <div class = "post">
+        </div>
+        </section>
+	   <section id="post" class="box">
 		   <h2>chime in</h2>
 		   <div class="entry_field">
 		   </div>
 		   <div id="submit" class="button">
 		   </div>
-	   <section id="calc">
+        </section>
+	   <section id="calc" class="box">
 		   <div id="blood_sugar" class="num_input">
 			   <h4>what was your most recent reading?</h4>
 			   <!-- numeric input field!-->
@@ -35,9 +66,12 @@
 			   <h4>get any exercise today?</h4>
 			   <!-- sliding scale, 1-5 !-->
 		   </div>
-		   <div id="sweets" class="return"></div>
+		   <div id="sweets" class="return">
+           </div>
+        </section>
 				   
-	   <section id="viz">
-	<div id="footer">
+	   <section id="viz" class="box">
+         <div id="footer"></div>
+        </section>  
   </body>
 </html>
