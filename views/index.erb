@@ -5,51 +5,30 @@
 	<link rel="stylesheet" href="/style.css" type="text/css">
   </head>
   <body>
-	  <div id="header">
-		<img src="http://pickd.com/img/logo-174x216.png" width="100" height="200">
-		<h1>this is your SWEET SOCIAL COMMUNITY</h1>
-		<br/>
-		<h2><p>Hello <%= @name %>, how are you?</p></h2>
-    </div>
-		<div id="nav">
-			<ul>
-				<li>home</li>
-				<li>connect</li>
-				<li>search</li>
-				<li>profile</li>
-			</ul>
-	  	</div>
-	  <section id = "feed" class="box">
+    <div id="header">
+  		<img src="http://pickd.com/img/logo-174x216.png" width="100" height="400">
+  		<h1>this is your SWEET SOCIAL COMMUNITY</h1>
+  		<br/>
+  		<h2>Hiya, <%= @name %>, how you been?</h2>
+  	</div>
+  	<div id="nav" class="box">
+  		<ul>
+  			<li><a href="/index.erb">home</a></li>
+  			<li><a href="/connect.erb">connect</a></li>
+  			<li><a href="/search.erb">search</a></li>
+  			<li><a href="/profile.erb">profile</a></li>
+  		</ul>
+  	</div>
+		<section id = "feed" class="box">
 		  <h2>what's happenin'</h2>
-        <div class = "post">
-        </div>
         </section>
-	   <section id="post" class="box">
+	   	<section id="post" class="box">
 		   <h2>chime in</h2>
 		   <div class="entry_field">
 		   </div>
 		   <div id="submit" class="button">
 		   </div>
         </section>
-	   <section id="calc" class="box">
-		   <div id="blood_sugar" class="num_input">
-			   <h4>what was your most recent reading?</h4>
-			   <!-- numeric input field!-->
-		   </div>
-		   <div id="sress" class="scale">
-			   <h4>stressed?</h4>
-			   <!-- sliding scale, 1-5 !-->
-		   </div>
-		   <div id="exercise" class="scale">
-			   <h4>get any exercise today?</h4>
-			   <!-- sliding scale, 1-5 !-->
-		   </div>
-		   <div id="sweets" class="return">
-           </div>
-        </section>
-				   
-	   <section id="viz" class="box">
-         <div id="footer"></div>
         </section>  
   </body>
 </html>
