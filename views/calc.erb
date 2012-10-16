@@ -1,18 +1,109 @@
-
-<section id="calc" class="box">
-   <div id="blood_sugar" class="num_input">
-	   <h4>what was your most recent reading?</h4>
-	   <!-- numeric input field-->
-   </div>
-   <div id="sress" class="scale">
-	   <h4>stressed?</h4>
-	   <!-- sliding scale, 1-5 -->
-   </div>
-   <div id="exercise" class="scale">
-	   <h4>get any exercise today?</h4>
-	   <!-- sliding scale, 1-5 -->
-   </div>
-   <div id="sweets" class="return">
+<!doctype html>
+<html>
+<head>
+	<title>the calculator</title>
+	<link rel="stylesheet" href="/style.css" type="text/css">
+	<style>
+	img
+	{
+	position:absolute;
+	left:5px;
+	top:5px;
+	z-index:-1;
+	}
+	body
+	{
+	background-color:gray;
+	background-position:fixed;
+	background-size:100%;
+	}
+	h1
+	{
+	margin-left:200px;
+	font-family:helvetica;
+	font-size:24px;
+	color:white;
+	}
+	h2
+	{
+	margin-left:150px;
+	}
+	ul
+	{
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	}
+	li
+	{   
+	color:black;
+	}
+	a:link, a:visited
+	{
+	display:block;
+	width:20px;
+	padding:15px;
+	margin:10px;
+	font-weight:bold;
+	text-decoration:none;
+	border:1px solid black;
+	}
+	.box
+	{
+	background:white;
+	margin:10px;
+	padding:5px;
+	position:relative;
+	border:2px solid black;
+	border-radius:2%;    
+	}
+	#header
+	{
+	font-family:helvetica;
+	}
+	#nav
+	{
+	float:right;
+	}
+	#calculator
+	{
+	float:left;
+	margin-left:300px;
+	}
+	</style>
+</head>
+<body>
+  	<div id="header">
+		<img src="http://pickd.com/img/logo-174x216.png" width="100" height="400">
+		<h1>this is your SWEET SOCIAL COMMUNITY</h1>
+		<br/>
+		<h2>Hiya, <%= @name %>, how you been?</h2>
+	</div>
+	<div id="nav" class="box">
+		<ul>
+			<li><a href="/index.erb">home</a></li>
+			<li><a href="/connect.erb">connect</a></li>
+			<li><a href="/search.erb">search</a></li>
+			<li><a href="/profile.erb">profile</a></li>
+		</ul>
+	</div>
+	<section id="calculator" class="box">
+	<div id="blood_sugar" class="num_input">
+	   	<h4>what was your most recent reading?</h4>
+	   	<!-- numeric input field-->
+   	</div>
+   	<div id="stress" class="scale">
+		<h4>stressed?</h4>
+	   	<!-- sliding scale, 1-5 -->
+   	</div>
+   	<div id="exercise" class="scale">
+	   	<h4>get any exercise today?</h4>
+	   	<!-- sliding scale, 1-5 -->
+   	</div>
+   	<div id="sweets" class="return">
+		<h3>your glucose is around #{return}.</h3>
+		<!-- "post to your feed?" && "see trends" buttons -->
     </div>
- </section>
-	
+	</section>
+</body>
+</html>
