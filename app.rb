@@ -10,8 +10,9 @@ get '/login' do
 end
 
 post '/login/:name' do
-  @name={:name}
-  "Welcome back, #{params[:name]}"
+  @name=params[:name]
+  "Welcome back, #{@name}"
+end
 
 get '/connect' do
   erb :connect
