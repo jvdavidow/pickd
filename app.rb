@@ -21,3 +21,9 @@ end
 get '/calc' do
   erb :calc
 end
+
+__END__
+
+@@ layout
+%html
+  = yield
